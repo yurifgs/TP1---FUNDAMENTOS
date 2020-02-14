@@ -10,8 +10,8 @@ val vazio = listOf<Int>()
 val lista = listOf(50,2,3,4,5,6,51)
 
 // // QUESTÃO 2 - TP1 
-fun primeiroElemento(lista: List<Int>){
-    if(lista[0] < lista[lista.lastIndex]){
+fun primeiroElemento(list: List<Int>){
+    if(list[0] < list[list.lastIndex]){
         println("Infnet")
     }
     else {
@@ -20,23 +20,23 @@ fun primeiroElemento(lista: List<Int>){
 }
 
 // // QUESTÃO 3 - TP1
-fun maiorElemento(list:List<Int>): Int{
+fun maiorElemento(list:List<Int>){
     var controle = 0
-    lista.forEach{
+    list.forEach{
         if(controle < it){
             controle = it
         }
     }
-    return (controle)
+    println(controle)
 }
 
 fun main() {
 
     //Questão 2
-    primeiroElemento(lista)
+    primeiroElemento(triangulo)
 
     //Questão 3
-    maiorElemento(lista)
+    maiorElemento(fibonacci)
     //maiorElemento(fibonacci)
     //maiorElemento(vazio)
-}
+} 
